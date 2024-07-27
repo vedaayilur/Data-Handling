@@ -1,3 +1,13 @@
+"""
+This module at it's current version can generate log time at +0:00 UTC or GMT.
+use the below import line to seamlessly used the two methods:
+    # 1. getDate(): returns date DD-MM-YYYY
+    # 2. getTime(): returns time HH:MM::SS\
+    
+use the below line to import the methods seamlessly:
+    "from getUTCTime import getTime,getDate"
+
+"""
 import time as time_now
 
 def getDate():
