@@ -137,12 +137,8 @@ class writeToFile:
         self.readFile()
         self.returnColumns()
         self.buildNewLineDict()
-        print(self.col)
-        print(self.newLine)
-        print(self.newlineDict)
         df1 = pd.read_csv(self.path)
         df1.loc[len(df1)] = self.newlineDict
-        print(df1)
         df1.to_csv(self.path,index = False)
 
 
